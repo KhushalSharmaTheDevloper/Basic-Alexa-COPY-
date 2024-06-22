@@ -1,0 +1,185 @@
+import time as t
+
+print("Welcome to Admin Pannel." + "\n" + "made by khushal." + "\n") 
+
+time1 = t.localtime()
+
+currunttime = t.strftime("%H : %M" , time1)
+print("Currunt Time Is " + currunttime + "\n")
+print("Laucnhing Session...." + "\n")
+t.sleep(5)
+
+name = input("Enter Admin Name." + "\n")
+
+if name == "Khushal Sharma":
+    print("Checking Data Base...")
+    t.sleep(3)
+    password = input("Enter Passcode. ")
+    if password == "admin1234":
+        print("User Auhtenticated." + "\n" + "Launching Owner Pannel...")
+        question = input("What Are you Up To Today?")
+        if question == "maths":
+                t.sleep(1)
+                print("alr. Faster your seet belts while i am loading...")
+                t.sleep(3)
+                print("You can add upto 2 numbers at a time." + "\n")
+                num1 = int(input("Number 1 here " + "\n"))
+                num2 = int(input("Number 2 here "))
+                total = num1 + num2
+                print ("according to me your total is " + total)
+                t.sleep(2)
+                ask = input("Want to do more with me? like finding area or peri.? " + "\n")
+                if ask == "area":
+                      print("Booting Up...")
+                      t.sleep(4)
+                      l = int(input("enter length" + "\n"))
+                      h = int(input("enter height" + "\n"))
+                      area = l*h
+                      print("Let Me Use My Brain...")
+                      t.sleep(3)
+                      print("area is" + area)
+                
+                
+                elif ask == "peri":
+                      print("Loading..")
+                      t.sleep(2)
+        elif question == "hindi":
+                        print("Hold on" + "\n")
+                        t.sleep(5)
+                        print("Jao Phele khud Hindi Sekh Ke Ao.")
+
+        elif question == "GK quiz":
+              t.sleep(1)
+              question1 = input("Enter Name Of Our Prime Miniser")
+              if question1 == "Modi":
+                    print("Cheking..." + "\n")
+                    t.sleep(4)
+                    print("Yay You Got iT Right :D" + "\n")
+                    points = 1
+                    break_or_not = input("Want To Play More With Khuhal?" + "\n")
+                    if break_or_not == "yes":
+                          print("Alr.")
+                          question2 = input("What is name of my dad? ")
+                          if question2 == "deepak sharma":
+                                print("Yay You Got it right!!")
+                                points = 2
+                                check_points = input("Want to check your points? ")
+                                if check_points == "yes":
+                                      print(points)
+                                
+                                else:
+                                      print("alr. You Opted for no." + "\n")
+
+                          else:
+                                print("wrong!" + "\n")
+
+                    else:
+                          print("Alr. Bye!" + "\n")
+                          quit()
+              else:
+                    print("You Got It Wrong, Noob!" + "\n")
+                    print("No points given." + "\n")
+    else:
+        print("Did You Check your passowrd again? Cuz Its Wrong." + "\n" + "Relaunching Session")
+        t.sleep(3)
+        quit()
+
+elif name == "Anupma Sharma":
+    password_A = input("Enter Passcode ")
+    if password_A == "khushal":
+        print("User Auhtenticated." + "\n" + "Launching Mother Pannel.")
+
+
+elif name == "Deepak Sharma":
+    password_D = input("Enter Passcode ")
+    if password_D == "mithu":
+        print("User Auhtenticated." + "\n" + "Launching Dad Pannel.")
+    
+
+else:
+    print("Admin User Not Found." + "\n" + "Please Contact Khushal To Add Your Name in Admin list." )
+    print("Orrrrr....." + "\n")
+    print("lets make your admin id.(one time enter.)")
+    t.sleep(1)
+    print("booting up sign up page(one time)")
+    t.sleep(3)
+    print("done!" + "\n")
+    userid = input("Enter name." +"\n")
+    passcode = input("Enter Passcode" + "\n")
+    print("Updating Server....")
+    t.sleep(6)
+
+    f=open("savetime.csv", "w")
+
+    f.write("footprint" + "\n")
+    f.write(str (userid + "\n"))
+
+
+    f.close()
+
+
+print("User Auhtenticated." + "\n" + "Launching Temparory Pannel...")
+question = input("What Are you Up To Today?")
+if question == "maths":
+                t.sleep(1)
+                print("alr. Faster your seet belts while i am loading...")
+                t.sleep(3)
+                print("You can add upto 2 numbers at a time." + "\n")
+                num1 = int(input("Number 1 here " + "\n"))
+                num2 = int(input("Number 2 here "))
+                total = num1 + num2
+                print ("according to me your total is " + total)
+                t.sleep(2)
+                ask = input("Want to do more with me? like finding area or peri.? " + "\n")
+                if ask == "area":
+                      print("Booting Up...")
+                      t.sleep(4)
+                      l = int(input("enter length" + "\n"))
+                      h = int(input("enter height" + "\n"))
+                      area = l*h
+                      print("Let Me Use My Brain...")
+                      t.sleep(3)
+                      print("area is" + area)
+                
+                
+                elif ask == "peri":
+                      print("Loading..")
+                      t.sleep(2)
+elif question == "hindi":
+                        print("Hold on" + "\n")
+                        t.sleep(5)
+                        print("Jao Phele khud Hindi Sekh Ke Ao.")
+
+elif question == "GK quiz":
+              t.sleep(1)
+              question1 = input("Enter Name Of Our Prime Miniser")
+              if question1 == "Modi":
+                    print("Cheking..." + "\n")
+                    t.sleep(4)
+                    print("Yay You Got iT Right :D" + "\n")
+                    points = 1
+                    break_or_not = input("Want To Play More With Khuhal?" + "\n")
+                    if break_or_not == "yes":
+                          print("Alr.")
+                          question2 = input("What is name of my dad? ")
+                          if question2 == "deepak sharma":
+                                print("Yay You Got it right!!")
+                                points = 2
+                                check_points = input("Want to check your points? ")
+                                if check_points == "yes":
+                                      print(points)
+                                
+                                else:
+                                      print("alr. You Opted for no." + "\n")
+
+                          else:
+                                print("wrong!" + "\n")
+
+                    else:
+                          print("Alr. Bye!" + "\n")
+                          quit()
+              else:
+                    print("You Got It Wrong, Noob!" + "\n")
+                    print("No points given." + "\n")
+
+
